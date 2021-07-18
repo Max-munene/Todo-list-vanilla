@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet" />
+
+		<link rel="stylesheet" href="./style.css" />
+		<link
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+			rel="stylesheet"
+		/>
+		<title>Todo List</title>
+	</head>
+
+	<body>
+		<header>
+			<div class="header_p"><p>&#169;2021 all rights reserved:Brimtech</p></div>
+
+			<br />
+			<div>
+				<h1>Max's Todo List</h1>
+			</div>
+		</header>
+		<form>
+			<input type="text" class="todo-input" />
+			<button class="todo-button" type="submit">
+				<i class="far fa-plus-square"></i>
+			</button>
+			<div class="select">
+				<select name="todos" class="filter-todo">
+					<option value="all">All</option>
+					<option value="completed">Completed</option>
+					<option value="ucompleted">Uncompleted</option>
+				</select>
+			</div>
+		</form>
+		<div class="todo-container">
+			<ul class="todo-list">
+				<div class="todo"></div>
+			</ul>
+		</div>
+
+		<script src="./app.js"></script>
+	</body>
+</html>
